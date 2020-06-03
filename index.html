@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/img/apple-icon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/vendor/@fortawesome/fontawesome-free/css/regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
+    />
+    <link rel="stylesheet" href="http://ui-grid.info/release/ui-grid.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script src="http://ui-grid.info/release/ui-grid.js"></script>
+    <script src="./assets/vendor/@fortawesome/fontawesome-free/js/angularJS/angular-route.min.js"></script>
+    <script src="./assets/vendor/@fortawesome/fontawesome-free/js/angularJS/testApp.module.js"></script>
+    <script src="./assets/vendor/@fortawesome/fontawesome-free/js/angularJS/login/login.service.js"></script>
+    <script src="./assets/vendor/@fortawesome/fontawesome-free/js/angularJS/dashboard/dashboard.service.js"></script>
+    <script src="./assets/vendor/@fortawesome/fontawesome-free/js/angularJS/data.factory.js"></script>
+    <script src="./assets/vendor/@fortawesome/fontawesome-free/js/angularJS/loader.controller.js"></script>
+    <script src="./assets/vendor/@fortawesome/fontawesome-free/js/angularJS/login/login.controller.js"></script>
+    <script src="./assets/vendor/@fortawesome/fontawesome-free/js/angularJS/dashboard/dashboard.controller.js"></script>
+    <title>TutenTest | Luis Alfonso Olvera</title>
+  </head>
+  <body class="text-gray-800 antialiased" ng-app="testApp">
+    <ng-view></ng-view>
+  </body>
+  <script>
+    function toggleNavbar(collapseID) {
+      document.getElementById(collapseID).classList.toggle("hidden");
+      document.getElementById(collapseID).classList.toggle("block");
+    }
+  </script>
+</html>
